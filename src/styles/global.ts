@@ -2,8 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        --background: #000000;
-        --blue: #0A1420;
+        --black: #000000;
+        
+        --dark_blue: #0A1420;
+        --light_blue: #19A69F;
+
+        --dark_gray: #121212;
+        --medium_gray: #292D32;
+        --light_gray: #434445;
+
+        --white: #FFFFFF;
     }
     
     * {
@@ -22,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--background);
+        background: var(--black);
         -webkit-font-smoothing: antialiased;
     }
 
