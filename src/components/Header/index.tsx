@@ -1,5 +1,7 @@
 import { Logo } from '../Logo';
 import { Menu } from '../Menu';
+import { BarSearch } from '../BarSearch';
+
 import { Container, Content } from './styles';
 
 export function Header() {
@@ -8,6 +10,7 @@ export function Header() {
             <Content>
                 <Logo />
                 <Menu />
+                <BarSearch />
             </Content>    
         </Container>
     )

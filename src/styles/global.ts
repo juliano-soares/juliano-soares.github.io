@@ -4,12 +4,12 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --black: #000000;
         
-        --dark_blue: #0A1420;
-        --light_blue: #19A69F;
+        --dark-blue: #0A1420;
+        --light-blue: #19A69F;
 
-        --dark_gray: #121212;
-        --medium_gray: #292D32;
-        --light_gray: #434445;
+        --dark-gray: #121212;
+        --medium-gray: #292D32;
+        --light-gray: #434445;
 
         --white: #FFFFFF;
     }
@@ -44,6 +44,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     button {
+        color: none;
+        background: none;
+        border: none;
         cursor: pointer;
     }
 
