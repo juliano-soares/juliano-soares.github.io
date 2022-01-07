@@ -35,5 +35,6 @@ export const Container = styled.footer`
         margin-top: 1em;
         padding-left: 5px;
         margin-right: 10px;
+        text-decoration: none;
     }
 `;
