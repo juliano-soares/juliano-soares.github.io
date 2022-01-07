@@ -27,12 +27,13 @@ export const Container = styled.div`
     .search_input {
         outline: none;
         border: 0;
-        background-color: var(--black);
+        background-color: transparent;
         width: 220px;
         height: 100%;
         padding: 10px;
         border-radius: 20px;
         color: var(--white);
+        font-size: 18px;
     }
 
     .search_input::placeholder {

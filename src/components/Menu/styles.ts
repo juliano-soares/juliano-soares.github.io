@@ -14,7 +14,7 @@ export const Container = styled.div`
 
         font-family: Roboto;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     a.active {
