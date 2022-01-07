@@ -1,11 +1,10 @@
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 
-export function Home() {
+export function Artigo() {
     return (
         <>
-            <Header />
-            <Footer />
+            <h1> Página de Artigo </h1>
         </>
     )
 }
