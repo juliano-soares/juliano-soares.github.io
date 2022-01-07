@@ -28,7 +28,6 @@
  - 2º Acessar a pasta
  - 3º Executar "yarn"
  - 4º Executar "yarn start"
- - 4º Executar "yarn start"
 
  </p>
  </details>
