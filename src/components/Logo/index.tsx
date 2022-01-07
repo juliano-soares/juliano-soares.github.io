@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-import logoImg from '../../assets/images/logo.png'; 
+const logoImg = require('../../assets/images/logo.png'); 
 
 export function Logo() {
     return (

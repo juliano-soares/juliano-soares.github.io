@@ -1,11 +1,17 @@
 import { GlobalStyle } from "./styles/global";
-import Routes from './routes';
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { AppContainer } from "./components/Container";
 
-export function App() {
+export function App({children}: any) {
   return (
     <>
-      <Routes />
       <GlobalStyle />
+      <Header/>
+      <AppContainer>
+        {children}
+      </AppContainer>
+      <Footer />
     </>
-  );
+  )
 }
