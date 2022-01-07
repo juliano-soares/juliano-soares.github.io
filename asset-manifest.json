@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.20a12a83.js",
-    "index.html": "/index.html",
-    "main.20a12a83.js.map": "/static/js/main.20a12a83.js.map"
+    "main.js": "/juliano-soares/static/js/main.1ce5c8c1.js",
+    "index.html": "/juliano-soares/index.html",
+    "main.1ce5c8c1.js.map": "/juliano-soares/static/js/main.1ce5c8c1.js.map"
   },
   "entrypoints": [
-    "static/js/main.20a12a83.js"
+    "static/js/main.1ce5c8c1.js"
   ]
 }
