@@ -1,13 +1,13 @@
 import { Container } from './styles';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function Menu() {
     return (
         <Container>
-            <Link to="/" className="active">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/portifolio">Portifólio</Link>
-            <Link to="/contato">Contato</Link>
+            <NavLink to="/" exact activeClassName="active">Home</NavLink>
+            <NavLink to="/blog" activeClassName="active">Blog</NavLink>
+            <NavLink to="/portifolio" activeClassName="active">Portifólio</NavLink>
+            <NavLink to="/contato" activeClassName="active">Contato</NavLink>
         </Container>
     )
 }
