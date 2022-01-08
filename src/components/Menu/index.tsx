@@ -1,12 +1,13 @@
 import { Container } from './styles';
+import { Link } from "react-router-dom";
 
 export function Menu() {
     return (
         <Container>
-            <a href="/" className="active">Home</a>
-            <a href="/blog">Blog</a>
-            <a href="/portifolio">Portifólio</a>
-            <a href="/contato">Contato</a>
+            <Link to="/" className="active">Home</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/portifolio">Portifólio</Link>
+            <Link to="/contato">Contato</Link>
         </Container>
     )
 }
