@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    background: var(--dark-blue);
+    background: ${props => props.theme.colors.dark_blue};
     height: 200px;
 `;
 

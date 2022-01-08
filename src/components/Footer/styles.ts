@@ -16,7 +16,7 @@ export const Container = styled.footer`
         font-size: 14px;
         line-height: 16px;
         display: inline-block;
-        color: #FFFFFF;
+        color: ${props => props.theme.colors.white};
         margin-bottom: 1em;
         margin-top: 1em;
         float: left;
@@ -30,7 +30,7 @@ export const Container = styled.footer`
         font-size: 14px;
         line-height: 16px;
         display: inline-block;
-        color: #FFFFFF;
+        color: ${props => props.theme.colors.white};
         margin-bottom: 1em;
         margin-top: 1em;
         padding-left: 5px;

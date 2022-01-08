@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 
     a {
-        color: var(--white);
+        color: ${props => props.theme.colors.white};
         text-decoration: none;
         padding: 0 2rem;
 
@@ -18,6 +18,6 @@ export const Container = styled.div`
     }
 
     a.active {
-        color: var(--light-blue);
+        color: ${props => props.theme.colors.light_blue};
     }
 `;
