@@ -1,18 +1,22 @@
 import { App } from '../../App';
-import { Container } from '../../components/Logo/styles';
-import { Container_First, Container_Text_First, Container_People_First, Container_Second, Container_People_Second, Container_Text_Second, Button_Download_CV, Container_Thrid, Container_Formation, Container_Languages, Container_Language, Container_Language_Image, Container_Language_Text } from './styles';
+import { Container_First, Container_Text_First, Container_People_First, Container_Second, Container_People_Second, Container_Text_Second, Button_Download_CV, Container_Thrid, Container_Formation, Container_Languages, Container_Language, Container_Language_Image, Container_Language_Text, Container_Fourth, Container_Carousel, Container_Carousel_Prev_Second, Container_Carousel_Prev, Container_Carousel_Primary, Container_Carousel_Next, Container_Carousel_Next_Second, Container_Carousel_Btn, Container_Carousel_Btn_Prev, Container_Carousel_Btn_Next } from './styles';
 
 const personal_picture_home_first = require('../../assets/images/anonimo.png');
 const personal_picture_home_second = require('../../assets/images/anonimo1.png');
 
-const icon_facebook_theme_white = require('../../assets/icons/facebook_theme_dark.png');
-const icon_twitter_theme_white = require('../../assets/icons/twitter_theme_dark.png');
-const icon_instagram_theme_white = require('../../assets/icons/instagram_theme_dark.png');
-const icon_github_theme_white = require('../../assets/icons/github_theme_dark.png');
-const icon_linkedin_theme_white = require('../../assets/icons/linkedin_theme_dark.png');
+const icon_facebook_theme_dark = require('../../assets/icons/facebook_theme_dark.png');
+const icon_twitter_theme_dark = require('../../assets/icons/twitter_theme_dark.png');
+const icon_instagram_theme_dark = require('../../assets/icons/instagram_theme_dark.png');
+const icon_github_theme_dark = require('../../assets/icons/github_theme_dark.png');
+const icon_linkedin_theme_dark = require('../../assets/icons/linkedin_theme_dark.png');
 
 const icon_brazil = require('../../assets/icons/brazil.png');
 const icon_usa = require('../../assets/icons/usa.png');
+
+const carousel_primary = require('../../assets/images/carousel_primary.jpeg');
+
+const icon_carousel_prev_theme_dark = require('../../assets/icons/arrow_left_theme_dark.png');
+const icon_carousel_next_theme_dark = require('../../assets/icons/arrow_right_theme_dark.png');
 
 export function Home() {
     return (
@@ -23,11 +27,11 @@ export function Home() {
                     <h3>Eu sou um Desenvolvedor Web</h3>
                     <p>Meu objetivo é trabalhar com grandes profissionais para compartilhar experiências e aprender mais e mais, usando metodologias ágeis em projetos de desenvolvimento de software, onde as pesquisas são o foco para descobrir a melhor forma de atender as expectativas e experiências dos usuários.</p>
                     <ul>
-                        <li><img src={icon_facebook_theme_white} alt="icone do Facebook" /></li>
-                        <li><img src={icon_twitter_theme_white} alt="icone do Twitter" /></li>
-                        <li><img src={icon_instagram_theme_white} alt="icone do Instagram" /></li>
-                        <li><img src={icon_github_theme_white} alt="icone do GitHub" /></li>
-                        <li><img src={icon_linkedin_theme_white} alt="icone do Linkedin" /></li>
+                        <li><img src={icon_facebook_theme_dark} alt="icone do Facebook" /></li>
+                        <li><img src={icon_twitter_theme_dark} alt="icone do Twitter" /></li>
+                        <li><img src={icon_instagram_theme_dark} alt="icone do Instagram" /></li>
+                        <li><img src={icon_github_theme_dark} alt="icone do GitHub" /></li>
+                        <li><img src={icon_linkedin_theme_dark} alt="icone do Linkedin" /></li>
                     </ul>
                 </Container_Text_First>
                 <Container_People_First>
@@ -77,6 +81,19 @@ export function Home() {
                 </ul>
                 </Container_Languages>
             </Container_Thrid>
+            <Container_Fourth>
+                <Container_Carousel>
+                    <Container_Carousel_Prev_Second><img src={carousel_primary} alt="Imagem do Curriculo" /></Container_Carousel_Prev_Second>
+                    <Container_Carousel_Prev><img src={carousel_primary} alt="Imagem do Curriculo" /></Container_Carousel_Prev>
+                    <Container_Carousel_Primary><img src={carousel_primary} alt="Imagem do Curriculo" /></Container_Carousel_Primary>
+                    <Container_Carousel_Next><img src={carousel_primary} alt="Imagem do Curriculo" /></Container_Carousel_Next>
+                    <Container_Carousel_Next_Second><img src={carousel_primary} alt="Imagem do Curriculo" /></Container_Carousel_Next_Second>
+                    <Container_Carousel_Btn>
+                        <Container_Carousel_Btn_Prev><img id="prev" src={icon_carousel_prev_theme_dark} alt="Botão Direito" /></Container_Carousel_Btn_Prev>
+                        <Container_Carousel_Btn_Next><img id="next" src={icon_carousel_next_theme_dark} alt="Botão Esquerdo" /></Container_Carousel_Btn_Next>
+                    </Container_Carousel_Btn>
+                </Container_Carousel>
+            </Container_Fourth>
         </App>
     )
 }

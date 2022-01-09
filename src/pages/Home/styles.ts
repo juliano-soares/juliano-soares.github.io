@@ -122,7 +122,7 @@ export const Container_Formation = styled.div`
             height: 40px;
             background: var(--light-blue);
             position: absolute;
-            left: -4%;
+            left: -17px;
             top: 5px;
             border-radius: 50%;
           }
@@ -166,7 +166,7 @@ export const Container_Languages = styled.div`
             height: 40px;
             background: var(--light-blue);
             position: absolute;
-            left: -4%;
+            left: -17px;
             top: 5px;
             border-radius: 50%;
           }
@@ -190,4 +190,103 @@ export const Container_Language_Image = styled.div`
 
 export const Container_Language_Text = styled.div`
     width: 50%;
+`;
+
+export const Container_Fourth = styled.div`
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    flex: 0 0 auto;
+    width: 60%;
+`;
+
+export const Container_Carousel = styled.div`
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+`;
+
+export const Container_Carousel_Prev_Second = styled.div`
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: .7;
+    img {
+        width: 200px;
+        transition: width 1s;
+        border-radius: 16px;
+    }
+`;
+
+export const Container_Carousel_Prev = styled.div`
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+    img {
+        width: 300px;
+        transition: width 1s;
+        border-radius: 25px;
+    }
+`;
+
+export const Container_Carousel_Primary = styled.div`
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    img {
+        width: 400px;
+        transition: width 1s;
+        border-radius: 33px;
+    }
+`;
+
+export const Container_Carousel_Next = styled.div`
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+    img {
+        width: 300px;
+        transition: width 1s;
+        border-radius: 25px;
+    }
+`;
+
+export const Container_Carousel_Next_Second = styled.div`
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: .7;
+    img {
+        width: 200px;
+        transition: width 1s;
+        border-radius: 16px;
+    }
+`;
+
+export const Container_Carousel_Btn = styled.div`
+    margin-top: 100px;
+`;
+
+export const Container_Carousel_Btn_Prev = styled.div`
+    float: left;
+`;
+
+export const Container_Carousel_Btn_Next = styled.div`
+    float: right;
 `;
