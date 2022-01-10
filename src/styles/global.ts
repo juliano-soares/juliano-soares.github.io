@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: ${props => props.theme.colors.black};
+        background: ${props => props.theme.title === 'light' ? props.theme.colors.white : props.theme.colors.black};;
         -webkit-font-smoothing: antialiased;
     }
 
@@ -28,7 +28,11 @@ export const GlobalStyle = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6, strong, p {
         font-weight: 600;
-        color: ${props => props.theme.colors.white};
+        color: ${props => props.theme.title === 'light' ? props.theme.colors.black : props.theme.colors.white};;
+    }
+
+    li {
+        list-style-type: none;
     }
 
     button {

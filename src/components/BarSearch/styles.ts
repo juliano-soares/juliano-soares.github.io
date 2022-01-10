@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background: #07101C;
-    border: 2px solid ${props => props.theme.colors.black};
+    background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.dark_blue};;
+    border: 2px solid ${props => props.theme.title === 'light' ? props.theme.colors.dark_blue : props.theme.colors.light_blue};;
     box-sizing: border-box;
     border-radius: 20px;
 

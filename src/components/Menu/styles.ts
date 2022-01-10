@@ -18,6 +18,6 @@ export const Container = styled.div`
     }
 
     a.active {
-        color: ${props => props.theme.colors.light_blue};
+        color: ${props => props.theme.title === 'light' ? props.theme.colors.dark_blue : props.theme.colors.light_blue};
     }
 `;

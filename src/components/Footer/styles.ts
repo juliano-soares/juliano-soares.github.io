@@ -6,7 +6,7 @@ export const Container = styled.footer`
     bottom: 0;
     width: 100%;
     height: 42px;
-    background: #0A1420;
+    background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.dark_blue};
     text-align:right;
 
     .copyright {
@@ -16,7 +16,7 @@ export const Container = styled.footer`
         font-size: 14px;
         line-height: 16px;
         display: inline-block;
-        color: ${props => props.theme.colors.white};
+        color: ${props => props.theme.title === 'light' ? props.theme.colors.black : props.theme.colors.white};
         margin-bottom: 1em;
         margin-top: 1em;
         float: left;
@@ -30,7 +30,7 @@ export const Container = styled.footer`
         font-size: 14px;
         line-height: 16px;
         display: inline-block;
-        color: ${props => props.theme.colors.white};
+        color: ${props => props.theme.title === 'light' ? props.theme.colors.black : props.theme.colors.white};
         margin-bottom: 1em;
         margin-top: 1em;
         padding-left: 5px;

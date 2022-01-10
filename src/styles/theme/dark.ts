@@ -4,6 +4,7 @@ export default {
 
     colors: {
         black: '#000000',
+        white: '#FFFFFF',
         
         dark_blue: '#0A1420',
         light_blue:'#19A69F',
@@ -12,6 +13,6 @@ export default {
         medium_gray: '#292D32',
         light_gray: '#434445',
         
-        white: '#FFFFFF',
+        text: '#FFFFFF',
     },
 }

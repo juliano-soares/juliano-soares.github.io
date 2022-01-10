@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container_First = styled.div`
+export const ContainerFirst = styled.div`
     margin-top: 5rem;
     margin-bottom: 3rem;
     margin-right: auto!important;
@@ -11,7 +11,7 @@ export const Container_First = styled.div`
     flex-wrap: wrap;
 `;
 
-export const Container_Text_First = styled.div`
+export const ContainerTextFirst = styled.div`
     width: 70%;
     h2 {
         margin-top: 30px;
@@ -26,15 +26,31 @@ export const Container_Text_First = styled.div`
         flex-wrap: wrap;
     }
     li {
+        content: "";
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.light_blue};
+        border-radius: 50%;
         margin-right: 10px;
+    }
+
+    .Icon {
+        color: ${props => props.theme.title === 'light' ? 'white' : 'black'};
     }
 `;
 
-export const Container_People_First = styled.div`
+export const ContainerPeopleFirst = styled.div`
     width: 30%;
+
+    img {
+        width: 120%;
+    }
 `;
 
-export const Container_Second = styled.div`
+export const ContainerSecond = styled.div`
     margin-bottom: 3rem;
     margin-right: auto!important;
     margin-left: auto!important;
@@ -44,11 +60,15 @@ export const Container_Second = styled.div`
     flex-wrap: wrap;
 `;
 
-export const Container_People_Second = styled.div`
+export const ContainerPeopleSecond = styled.div`
     width: 50%;
+
+    img {
+        width: 100%;
+    }
 `;
 
-export const Container_Text_Second = styled.div`
+export const ContainerTextSecond = styled.div`
     width: 50%;
     h3 {
         margin-bottom: 20px;
@@ -61,7 +81,7 @@ export const Container_Text_Second = styled.div`
     }
 `;
 
-export const Button_Download_CV = styled.div`
+export const ButtonDownloadCV = styled.div`
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
@@ -75,12 +95,12 @@ export const Button_Download_CV = styled.div`
     font-size: 1rem;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    color: #fff;
-    background-color: var(--light-blue);
-    border-color: var(--light-blue);
+    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.light_blue};
+    border-color: ${props => props.theme.colors.light_blue};
 `;
 
-export const Container_Thrid = styled.div`
+export const ContainerThrid = styled.div`
     margin-top: 5rem;
     margin-bottom: 3rem;
     margin-right: auto!important;
@@ -91,10 +111,17 @@ export const Container_Thrid = styled.div`
     flex-wrap: wrap;
 `;
 
-const icon_notes = require('../../assets/icons/notes.png');
+const iconnotes = require('../../assets/icons/notes.png');
 
-export const Container_Formation = styled.div`
+export const ContainerFormation = styled.div`
     width: 50%;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: ${props => props.theme.colors.light_blue};
+    }
+
     ul{
         list-style: none;
         margin: 0;
@@ -104,23 +131,23 @@ export const Container_Formation = styled.div`
             content: "";
             display: inline-block;
             width: 8px;
-            background: var(--light-blue);
+            background: ${props => props.theme.colors.light_blue};
             position: absolute;
             top: -15px;
-            height: calc(100% - 70px );
+            height: calc(100% - 140px);
         }
         li {
           position: relative;
           padding-left: 55px;
           margin-bottom: 55px;
           &:before{
-            content: url(${icon_notes});
+            content: url(${iconnotes});
             display: flex;
             justify-content: center;
             align-items: center;
             width: 40px;
             height: 40px;
-            background: var(--light-blue);
+            background: ${props => props.theme.colors.light_blue};
             position: absolute;
             left: -17px;
             top: 5px;
@@ -128,72 +155,77 @@ export const Container_Formation = styled.div`
           }
         }
         p {
-            background: var(--dark-blue);
+            background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.light_blue};
             padding: 20px;
         }
     }
 `;
 
-const icon_languages = require('../../assets/icons/languages.png');
+const iconlanguages = require('../../assets/icons/languages.png');
 
-export const Container_Languages = styled.div`
+export const ContainerLanguages = styled.div`
     width: 50%;
     padding-left: 50px;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: ${props => props.theme.colors.light_blue};
+    }
+
     ul{
         list-style: none;
         margin: 0;
         padding: 0;
         position: relative;
+
         &:before{
             content: "";
-            display: inline-block;
             width: 8px;
-            background: var(--light-blue);
+            background: ${props => props.theme.colors.light_blue};
             position: absolute;
             top: -15px;
             height: calc(100% - 70px );
         }
         li {
-          position: relative;
           padding-left: 55px;
           margin-bottom: 55px;
           &:before{
-            content: url(${icon_languages});
+            content: url(${iconlanguages});
             display: flex;
             justify-content: center;
             align-items: center;
+            
             width: 40px;
             height: 40px;
-            background: var(--light-blue);
+            background: ${props => props.theme.colors.light_blue};
             position: absolute;
             left: -17px;
-            top: 5px;
             border-radius: 50%;
           }
         }
     }
 `;
 
-export const Container_Language = styled.div`
+export const ContainerLanguage = styled.div`
     margin-right: auto!important;
     margin-left: auto!important;
     flex: 0 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background: var(--dark-blue);
+    background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.light_blue};;
     padding: 20px;
 `;
 
-export const Container_Language_Image = styled.div`
+export const ContainerLanguageImage = styled.div`
     width: 30%;
 `;
 
-export const Container_Language_Text = styled.div`
+export const ContainerLanguageText = styled.div`
     width: 50%;
 `;
 
-export const Container_Fourth = styled.div`
-    margin-top: 5rem;
+export const ContainerFourth = styled.div`
     margin-bottom: 3rem;
     margin-right: auto!important;
     margin-left: auto!important;
@@ -201,13 +233,19 @@ export const Container_Fourth = styled.div`
     width: 60%;
 `;
 
-export const Container_Carousel = styled.div`
+export const ContainerCarousel = styled.div`
     position: relative;
     height: 400px;
     overflow: hidden;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: ${props => props.theme.colors.light_blue};
+    }
 `;
 
-export const Container_Carousel_Prev_Second = styled.div`
+export const ContainerCarouselPrevSecond = styled.div`
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
@@ -222,7 +260,7 @@ export const Container_Carousel_Prev_Second = styled.div`
     }
 `;
 
-export const Container_Carousel_Prev = styled.div`
+export const ContainerCarouselPrev = styled.div`
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
@@ -236,7 +274,7 @@ export const Container_Carousel_Prev = styled.div`
     }
 `;
 
-export const Container_Carousel_Primary = styled.div`
+export const ContainerCarouselPrimary = styled.div`
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
@@ -250,7 +288,7 @@ export const Container_Carousel_Primary = styled.div`
     }
 `;
 
-export const Container_Carousel_Next = styled.div`
+export const ContainerCarouselNext = styled.div`
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
@@ -264,7 +302,7 @@ export const Container_Carousel_Next = styled.div`
     }
 `;
 
-export const Container_Carousel_Next_Second = styled.div`
+export const ContainerCarouselNextSecond = styled.div`
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
@@ -279,14 +317,14 @@ export const Container_Carousel_Next_Second = styled.div`
     }
 `;
 
-export const Container_Carousel_Btn = styled.div`
+export const ContainerCarouselBtn = styled.div`
     margin-top: 100px;
 `;
 
-export const Container_Carousel_Btn_Prev = styled.div`
+export const ContainerCarouselBtnPrev = styled.div`
     float: left;
 `;
 
-export const Container_Carousel_Btn_Next = styled.div`
+export const ContainerCarouselBtnNext = styled.div`
     float: right;
 `;
