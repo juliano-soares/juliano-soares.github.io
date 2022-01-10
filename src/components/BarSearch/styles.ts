@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background: #07101C;
-    border: 2px solid #000000;
+    border: 2px solid ${props => props.theme.colors.black};
     box-sizing: border-box;
     border-radius: 20px;
 
@@ -32,11 +32,11 @@ export const Container = styled.div`
         height: 100%;
         padding: 10px;
         border-radius: 20px;
-        color: var(--white);
+        color: ${props => props.theme.colors.white};
         font-size: 18px;
     }
 
     .search_input::placeholder {
-        color: var(--light-gray);
+        color: ${props => props.theme.colors.light_gray};
     }
 `;

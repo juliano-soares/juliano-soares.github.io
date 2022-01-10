@@ -1,19 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
-    :root {
-        --black: #000000;
-        
-        --dark-blue: #0A1420;
-        --light-blue: #19A69F;
-
-        --dark-gray: #121212;
-        --medium-gray: #292D32;
-        --light-gray: #434445;
-
-        --white: #FFFFFF;
-    }
-    
+export const GlobalStyle = createGlobalStyle`    
     * {
         margin: 0;
         padding: 0;
@@ -30,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--black);
+        background: ${props => props.theme.colors.black};
         -webkit-font-smoothing: antialiased;
     }
 
@@ -41,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6, strong, p {
         font-weight: 600;
-        color: var(--white);
+        color: ${props => props.theme.colors.white};
     }
 
     button {

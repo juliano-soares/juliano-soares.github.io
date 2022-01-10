@@ -29,3 +29,7 @@
 - 4º Executar "yarn start"
 </p>
 </details>
+
+
+#### Ferramentas
+https://react-switch.netlify.app
