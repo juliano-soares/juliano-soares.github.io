@@ -134,7 +134,7 @@ export const ContainerFormation = styled.div`
             background: ${props => props.theme.colors.light_blue};
             position: absolute;
             top: -15px;
-            height: calc(100% - 140px);
+            height: calc(100% - 100px);
         }
         li {
           position: relative;
@@ -195,7 +195,6 @@ export const ContainerLanguages = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            
             width: 40px;
             height: 40px;
             background: ${props => props.theme.colors.light_blue};
@@ -327,4 +326,60 @@ export const ContainerCarouselBtnPrev = styled.div`
 
 export const ContainerCarouselBtnNext = styled.div`
     float: right;
+`;
+
+export const ContainerFifth = styled.div`
+    margin-bottom: 8rem;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    flex: 0 0 auto;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+export const ContainerIllustration = styled.div`
+    width: 50%;
+    img {
+        width: 100%;
+    }
+`;
+
+export const ContainerSkills = styled.div`
+    width: 50%;
+    margin-top: 130px;
+    h3 {
+        margin-bottom: 20px;
+    }
+    ul {
+        margin-top: 20px;
+    }
+    li {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+`;
+
+export const ContainerSkillsDots = styled.div`
+    position: absolute;
+    left: 55%;
+`;
+
+export const ContainerSkillsDot = styled.div`
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+`;
+
+export const ContainerSkillsDotChecked = styled.div`
+    height: 25px;
+    width: 25px;
+    background-color: #19A69F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
 `;

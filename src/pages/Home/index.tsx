@@ -21,7 +21,13 @@ import { ContainerFirst,
     ContainerCarouselNextSecond, 
     ContainerCarouselBtn, 
     ContainerCarouselBtnPrev, 
-    ContainerCarouselBtnNext } from './styles';
+    ContainerCarouselBtnNext,
+    ContainerFifth,
+    ContainerIllustration,
+    ContainerSkills,
+    ContainerSkillsDots,
+    ContainerSkillsDot,
+    ContainerSkillsDotChecked } from './styles';
 
 import personal_picture_home_first from '../../assets/images/anonimo.png';
 import personal_picture_home_second from '../../assets/images/anonimo1.png';
@@ -36,6 +42,8 @@ import carousel_primary from '../../assets/images/carousel_primary.jpeg';
 import icon_carousel_prev_theme_dark from '../../assets/icons/arrow_left_theme_dark.png';
 import icon_carousel_next_theme_dark from '../../assets/icons/arrow_right_theme_dark.png';
 import { Link } from 'react-router-dom';
+
+import illustration_skills from '../../assets/images/imagem1.png';
 
 export function Home() {
     return (
@@ -118,6 +126,21 @@ export function Home() {
                     </ContainerCarouselBtn>
                 </ContainerCarousel>
             </ContainerFourth>
+            <ContainerFifth>
+                <ContainerIllustration>
+                    <img src={illustration_skills} alt="Um foto do dono do Site" />
+                </ContainerIllustration>
+                <ContainerSkills>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li><p>C# </p> <ContainerSkillsDots><ContainerSkillsDotChecked /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /></ContainerSkillsDots></li>
+                        <li><p>Javascript </p> <ContainerSkillsDots><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /></ContainerSkillsDots></li>
+                        <li><p>ReactJS </p> <ContainerSkillsDots><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /></ContainerSkillsDots></li>
+                        <li><p>PHP </p> <ContainerSkillsDots><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /></ContainerSkillsDots></li>
+                        <li><p>Java </p> <ContainerSkillsDots><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /><ContainerSkillsDot /></ContainerSkillsDots></li>
+                    </ul>
+                </ContainerSkills>
+            </ContainerFifth>
         </App>
     )
 }
