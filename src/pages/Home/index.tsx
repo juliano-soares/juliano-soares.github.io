@@ -1,5 +1,7 @@
 import { App } from '../../App';
 import { Container_First, Container_Text_First, Container_People_First, Container_Second, Container_People_Second, Container_Text_Second, Button_Download_CV, Container_Thrid, Container_Formation, Container_Languages, Container_Language, Container_Language_Image, Container_Language_Text, Container_Fourth, Container_Carousel, Container_Carousel_Prev_Second, Container_Carousel_Prev, Container_Carousel_Primary, Container_Carousel_Next, Container_Carousel_Next_Second, Container_Carousel_Btn, Container_Carousel_Btn_Prev, Container_Carousel_Btn_Next } from './styles';
+import { Carousel } from '@spoqa/react-carousel';
+import '@spoqa/react-carousel/carousel.css';
 
 const personal_picture_home_first = require('../../assets/images/anonimo.png');
 const personal_picture_home_second = require('../../assets/images/anonimo1.png');
