@@ -13,10 +13,12 @@ export const Container = styled.div`
 
 export const ContainerFirst = styled.div`
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
     li {
         display: flex;
-        padding: 1rem;
-        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        padding-left: 1rem;
+        padding-right: 1rem;
         cursor: pointer;
         transition: 0.4s;
     }
@@ -42,14 +44,14 @@ export const ContainerFirst = styled.div`
 
 export const ContainerCard = styled.div`
     background: ${props => props.theme.title === 'light' ? props.theme.colors.light_blue : props.theme.colors.dark_blue};
-    border-radius: 0.25rem;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-bottom: 5px solid #08FDD8;
     p {
         color: #08FDD8;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 `;
 

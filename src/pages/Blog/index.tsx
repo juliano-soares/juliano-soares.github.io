@@ -9,6 +9,8 @@ import { Container,
 
 const listPosts = [
     { id: "0", img: "https://blog.hubspot.com/hubfs/GettyImages-974683580.jpg", title: "Criando o seu site de Portifólio somente com HTML & CSS", subtitle: "Faça seu site de forma rápida e simples com essas incriveis dicas.", category: "HTML & CSS" },
+    { id: "1", img: "https://blog.hubspot.com/hubfs/GettyImages-974683580.jpg", title: "Criando o seu site de Portifólio somente com HTML & CSS", subtitle: "Faça seu site de forma rápida e simples com essas incriveis dicas.", category: "HTML & CSS" },
+    { id: "2", img: "https://blog.hubspot.com/hubfs/GettyImages-974683580.jpg", title: "Criando o seu site de Portifólio somente com HTML & CSS", subtitle: "Faça seu site de forma rápida e simples com essas incriveis dicas.", category: "HTML & CSS" },
 ];
 
 export function Blog() {
