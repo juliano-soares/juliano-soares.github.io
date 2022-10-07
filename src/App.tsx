@@ -10,8 +10,8 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { AppContainer } from "./components/Container";
 
-export function App({children}: any) {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light); 
+export function App({ children }: any) {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
 
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
@@ -21,11 +21,11 @@ export function App({children}: any) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Header toggleTheme={toggleTheme}/>
+        {/* <Header toggleTheme={toggleTheme}/> */}
         <AppContainer>
           {children}
         </AppContainer>
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </>
   )

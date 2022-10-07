@@ -1,7 +1,9 @@
 import { App } from "../../App";
-import { ContainerFirst, 
-    ContainerTextFirst, 
-    ContainerPeopleFirst } from './styles';
+import {
+    ContainerFirst,
+    ContainerTextFirst,
+    ContainerPeopleFirst
+} from './styles';
 
 import personal_picture_contact from '../../assets/images/imagem2.png';
 
@@ -14,15 +16,15 @@ export function Contato() {
                     <form action="" method="post">
                         <div>
                             <label>Name:</label>
-                            <input type="text" name="name" id="name" autofocus>
+                            <input type="text" name="name" id="name" />
                         </div>
                         <div>
                             <label>Email:</label>
-                            <input type="text" name="name" id="name" autofocus>
+                            <input type="text" name="name" id="name" />
                         </div>
                         <div>
                             <label>Message:</label>
-                            <textarea name="message" id="message" rows="5" class="textarea is-large"></textarea>
+                            <textarea name="message" id="message" className="textarea is-large"></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </form>
